@@ -1,0 +1,653 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 10px 30px 10px 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.header{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+header button{
+    border: thin none transparent;
+    color: gray;
+    background: transparent;
+    font-size: 12pt;
+    margin-left: 30px;
+    outline: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px 20px 70px;
+    width: 100%;
+    height: 800px;
+    margin-top: 10px;
+
+}
+
+.main div h1{
+    font-size: 40pt;
+    color: rgb(155, 150, 150);
+}
+
+.main div h1 span{
+    color: rgb(53, 102, 238);
+}
+
+.main div p{
+    color: gray;
+}
+
+.main0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(218, 218, 218);
+    color: gray;
+    font-weight: 400;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+.main0 h1 span{
+    color: rgb(53, 102, 238);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.card-container .card div{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px 50px 50px;
+    border-radius: 100%;
+}
+
+#responsive{
+    padding: 50px 0 50px 0;
+    border-radius: 100%;
+}
+
+.card-container .card h3{
+    color: gray;
+}
+
+.card-container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.card-container1 .card div{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px 50px 50px;
+    border-radius: 100%;
+}
+
+.card-container1 .card h3{
+    color: gray;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(1em);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.is-visible{
+    opacity: 1;
+}
+
+.main1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 30px 30px 30px;
+}
+
+.main1 p{
+    color: gray;
+    font-size: 30pt;
+}
+
+.progress-container{
+    border-left: thin solid gray;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.bar{
+    background: rgb(199, 199, 199);
+    margin-bottom: 20px;
+}
+
+.bar div{
+    background: rgb(53, 102, 238);
+    padding: 2px 2px 2px 5px;
+    color: white;
+}
+
+#html{
+    width: 80%;
+}
+#css{
+    width: 70%;
+}
+#js{
+    width: 65%;
+}
+#node{
+    width: 50%;
+}
+#db{
+    width: 50%;
+}
+#write{
+    width: 80%;
+}
+#python{
+    width: 70%
+}
+
+@media only screen and (max-width:768px){
+    header{
+        display: none
+    }
+
+    .header{
+        width:100%;
+        box-shadow: 0px 0px 5px grey;
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 10px 10px 0px;
+    }
+
+    .menu-bar{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:15%;
+        height: auto;
+        padding: 5px 5px 5px 5px;
+        border: thin solid grey;
+        border-radius: 10%;
+    }
+
+    .cross{
+        padding: 4% 4% 4% 4%;
+    }
+
+    .cross #bar1{
+        display:none;
+    }
+
+    .cross #bar2{
+        transform: rotate(45deg);
+        margin-bottom:0
+    }
+
+    .cross #bar3{
+        transform: rotate(-45deg);
+        margin-bottom:0
+    }
+
+
+    .menu-bar div{
+        width:80%;
+        background:grey;
+        height: 2px;
+        margin-bottom: 5px;
+        border-radius:10%;
+        transition: transform 1s .35s cubic-bezier(0,1,.3,1);
+        will-change: transform;
+    } 
+
+    .menu{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(2em);
+        transition: transform 3s .25s cubic-bezier(0,1,.3,1),
+                    opacity   .3s .25s ease-out;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:rgba(218, 218, 218,0.4);
+        color: grey;
+        will-change: transform, opacity;
+    }
+
+    .menu a{
+        width:100%;
+    }
+    .menu button{
+        text-align: center;
+        color: gray;
+        width: 100%;
+        font-size: 120%;
+        padding: 20px 0px 20px 0px;
+    }
+
+
+    .menu-show{
+        display:flex;
+        transform: translateY(0em);
+        visibility: visible;
+        opacity: 1;
+        animation: fade 1s;
+    }
+
+
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+
+    }
+
+    .main div h1{
+        font-size: 170%;
+        color: rgb(155, 150, 150);
+    }
+
+    .main div h1 span{
+        color: rgb(53, 102, 238);
+    }
+
+    .main div p{
+        color: gray;
+    }
+
+    .main0{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: rgb(218, 218, 218);
+        color: gray;
+        font-weight: 400;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .main0 h1 span{
+        color: rgb(53, 102, 238);
+    }
+
+    .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: column;
+    margin-top: 50px;
+    width: 70%;
+}
+
+    .card-container .card div{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+        border-radius: 100%;
+    }
+
+    #responsive{
+        padding: 50px 0 50px 0;
+        border-radius: 100%;
+    }
+
+    .card-container .card h3{
+        color: gray;
+    }
+
+    .card-container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .card-container1 .card div{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+        border-radius: 100%;
+    }
+
+    .card-container1 .card h3{
+        color: gray;
+    }
+
+    #responsive{
+        padding: 50px 0 50px 0;
+        border-radius: 100%;
+    }
+
+    .hidden{
+        opacity: 0;
+        transform: translateY(1em);
+        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                    opacity .3s .25s ease-out;
+        will-change: transform, opacity;
+    }
+
+    .is-visible{
+        opacity: 1;
+    }
+
+    .main1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .main1 p{
+        color: gray;
+        font-size: 30pt;
+    }
+
+    .progress-container{
+        border-left: thin solid transparent;
+        padding: 2px 2px 2px 2px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bar{
+        background: rgb(199, 199, 199);
+        margin-bottom: 20px;
+    }
+
+    .bar div{
+        background: rgb(53, 102, 238);
+        padding: 2px 2px 2px 5px;
+        color: white;
+    }
+
+    #html{
+        width: 80%;
+    }
+    #css{
+        width: 70%;
+    }
+    #js{
+        width: 65%;
+    }
+    #node{
+        width: 50%;
+    }
+    #db{
+        width: 50%;
+    }
+    #write{
+        width: 80%;
+    }
+    #python{
+        width: 70%
+    }
+
+
+    @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px){
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: flex-end;
+        padding: 10px 30px 10px 10px;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header button{
+        border: thin none transparent;
+        color: gray;
+        background: transparent;
+        font-size: 15pt;
+        margin-left: 30px;
+        outline: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 20px 20px 70px;
+        width: 100%;
+        height: 800px;
+        margin-top: 10px;
+
+    }
+
+    .main div h1{
+        font-size: 40pt;
+        color: rgb(155, 150, 150);
+    }
+
+    .main div h1 span{
+        color: rgb(53, 102, 238);
+    }
+
+    .main div p{
+        color: gray;
+        font-size: 20pt;
+    }
+
+    .main0{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: rgb(218, 218, 218);
+        color: gray;
+        font-weight: 400;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .main0 h1 span{
+        color: rgb(53, 102, 238);
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .card-container .card div{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+        border-radius: 100%;
+    }
+
+    #responsive{
+        padding: 50px 0 50px 0;
+        border-radius: 100%;
+    }
+
+    .card-container .card h3{
+        color: gray;
+    }
+
+    .card-container1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .card-container1 .card div{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px 50px 50px;
+        border-radius: 100%;
+    }
+
+    .card-container1 .card h3{
+        color: gray;
+    }
+
+    .hidden{
+        opacity: 0;
+        transform: translateY(1em);
+        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                    opacity .3s .25s ease-out;
+        will-change: transform, opacity;
+    }
+
+    .is-visible{
+        opacity: 1;
+    }
+
+    .main1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .main1 p{
+        color: gray;
+        font-size: 30pt;
+    }
+
+    .progress-container{
+        border-left: thin solid gray;
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .bar{
+        background: rgb(199, 199, 199);
+        margin-bottom: 20px;
+    }
+
+    .bar div{
+        background: rgb(53, 102, 238);
+        padding: 2px 2px 2px 5px;
+        color: white;
+    }
+
+    #html{
+        width: 80%;
+    }
+    #css{
+        width: 70%;
+    }
+    #js{
+        width: 65%;
+    }
+    #node{
+        width: 50%;
+    }
+    #db{
+        width: 50%;
+    }
+    #write{
+        width: 80%;
+    }
+    #python{
+        width: 70%
+    }
+
+}

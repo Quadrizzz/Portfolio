@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" 
+                type="image/png" 
+                href="./logo_size.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href = './index.html'><button>Home</button></a>
+                <a href = './index1.html'><button>Projects</button></a>
+                <a href = './index2.html'><button>Contact</button></a>
+            </div>
+        </header>
+
+        <div class = 'header'>
+            <div class = "menu-bar" id = "menu-bar" onClick = "show_menu()">
+                <div id = 'bar1'>&nbsp;</div>
+                <div id ='bar2'>&nbsp;</div>
+                <div id= 'bar3'>&nbsp;</div>
+            </div>
+        </div>
+
+        <div class = "menu">
+            <a href = './index.html'><button>Home</button></a>
+            <a href = './index1.html'><button>Project</button></a>
+            <a href = './index2.html'><button>Contact</button></a>
+        </div>
+
+        <section class="main">
+            <div>
+                <h1>Hello,</h1>
+                <h1 id = "first">My name is <span id = "span_node"></span></h1>
+                <p id = "text"></p>
+            </div>
+        </section>
+
+        <section class = "main0">
+            <h1>I <span>CONVERT</span> DESIGNS INTO BEAUTIFUL <span>RESPONSIVE</span> WEBSITES,<br>CREATE <span>FUNCTIONING</span> WEB APPS AND WRITE <span>ENGAGING</span> PIECE OF WRITEUPS</h1>
+            <div class = "card-container">
+                <div class = 'card hidden' >
+                    <div id = "responsive">
+                        <img src="./image/laptop.png" alt="" srcset="" width="100px">
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                </div>
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/css.png" alt="" srcset="" width="100px">
+                    </div>
+                   <h3>HTML5/CSS3 Dev</h3>
+                </div>
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/react.png" alt="" srcset="">
+                    </div>
+                    <h3>Javascript/React</h3>
+                </div>
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/nodejs.png" alt="" srcset="" width = "100px">
+                    </div>
+                    <h3>NodeJs/ExpressJs</h3>
+                </div>
+            </div>
+
+            <div class="card-container1">
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/database.png" alt="" srcset=""  width = "100px">
+                    </div>
+                    <h3>Database/Postgres</h3>
+                </div>
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/python.png" alt="" srcset=""  width = "100px">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class = 'card hidden'>
+                    <div>
+                        <img src="./image/pen.png" alt="" srcset=""  width = "100px">
+                    </div>
+                    <h3>Writing</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class = "main1">
+            <p class="hidden">Skills</p>
+            <div class = "progress-container hidden">
+                <div class = "bar">
+                    <div id ="html">HTML5</div>
+                </div>
+                <div class = "bar">
+                    <div id ="css">CSS3</div>
+                </div>
+                <div class = "bar">
+                    <div id = "js">Javascript/React</div>
+                </div>
+                <div class = "bar">
+                    <div id ="node">NodeJs/ExpressJs</div>
+                </div>
+                <div class = "bar">
+                    <div id = "db">Database</div>
+                </div>
+                <div class = "bar">
+                    <div id = "python">Python</div>
+                </div>
+                <div class = "bar">
+                    <div id = "write">Writing</div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script src="./scripts/script.js"></script>
+
+</html>

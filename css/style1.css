@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 10px 30px 10px 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.header{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+header button{
+    border: thin none transparent;
+    color: gray;
+    background: transparent;
+    font-size: 12pt;
+    margin-left: 30px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-cards{
+    display: flex;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: gray;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.project-cards img{
+    width:20%;
+    height:auto;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:768px){
+    header{
+        display: none
+    }
+
+    .header{
+        width:100%;
+        box-shadow: 0px 0px 5px grey;
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 10px 10px 0px;
+    }
+
+    .menu-bar{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:15%;
+        height: auto;
+        padding: 5px 5px 5px 5px;
+        border: thin solid grey;
+        border-radius: 10%;
+    }
+
+    .cross{
+        padding: 4% 4% 4% 4%;
+    }
+
+    .cross #bar1{
+        display:none;
+    }
+
+    .cross #bar2{
+        transform: rotate(45deg);
+        margin-bottom:0
+    }
+
+    .cross #bar3{
+        transform: rotate(-45deg);
+        margin-bottom:0
+    }
+
+
+    .menu-bar div{
+        width:80%;
+        background:grey;
+        height: 2px;
+        margin-bottom: 5px;
+        border-radius:10%;
+        transition: transform 1s .35s cubic-bezier(0,1,.3,1);
+        will-change: transform;
+    } 
+
+    .menu{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(2em);
+        transition: transform 3s .25s cubic-bezier(0,1,.3,1),
+                    opacity   .3s .25s ease-out;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:rgba(218, 218, 218,0.4);
+        color: grey;
+        will-change: transform, opacity;
+    }
+
+    .menu a{
+        width:100%;
+    }
+    .menu button{
+        text-align: center;
+        color: gray;
+        width: 100%;
+        font-size: 120%;
+        padding: 20px 0px 20px 0px;
+    }
+
+
+    .menu-show{
+        display:flex;
+        transform: translateY(0em);
+        visibility: visible;
+        opacity: 1;
+        animation: fade 1s;
+    }
+
+    .project-cards{
+    display: flex;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: gray;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project-cards{
+    text-align: center;
+}
+
+.project-cards img{
+    width:70%;
+    height:auto;
+    border-radius: 5px;
+}
+
+   @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px){
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: flex-end;
+        padding: 10px 30px 10px 10px;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header button{
+        border: thin none transparent;
+        color: gray;
+        background: transparent;
+        font-size: 15pt;
+        margin-left: 30px;
+        outline: none;
+    }
+
+    .project-cards{
+    display: flex;
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: gray;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.project-cards img{
+    width:20%;
+    height:auto;
+    border-radius: 5px;
+}
+
+}

@@ -24,6 +24,11 @@ function animate2(){
         z++
         setTimeout(animate2, 100)
     }
+    show()
+}
+
+function show(){
+    document.getElementsByClassName('image')[0].classList.add('show-image')
 }
 
 animate1()

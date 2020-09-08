@@ -109,12 +109,17 @@ header button{
 .card-container .card div{
     background: white;
     display: flex;
-    width: 50%;
+    width: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 50px 50px 50px;
     border-radius: 100%;
+}
+
+.card-container .card img{
+    height: 80px;
+    width: 80px;
 }
 
 
@@ -134,13 +139,19 @@ header button{
 .card-container1 .card div{
     background: white;
     display: flex;
-    width: 50%;
+    width: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 50px 50px 50px;
     border-radius: 100%;
 }
+
+.card-container1 .card img{
+    height: 80px;
+    width: 80px;
+}
+
 
 .card-container1 .card h3{
     color: gray;
@@ -382,13 +393,18 @@ header button{
 
     .card-container .card div{
         background: white;
-        width: 55%;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 50px 50px 50px 50px;
         border-radius: 100%;
+    }
+
+    .card-container.card div img{
+        width: 50px;
+        height: 50px;
     }
 
 
@@ -408,13 +424,18 @@ header button{
 
     .card-container1 .card div{
         background: white;
-        width: 55%;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 50px 50px 50px 50px;
         border-radius: 100%;
+    }
+
+    .card-container1.card div img{
+        width: 50px;
+        height: 50px;
     }
 
     .card-container1 .card h3{
@@ -613,12 +634,17 @@ header button{
     .card-container .card div{
         background: white;
         display: flex;
-        width: 80%;
+        width: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 50px 50px 50px 50px;
         border-radius: 100%;
+    }
+
+    .card-container .card div img{
+        width: 70px;
+        height: 70px;
     }
     
     
@@ -626,24 +652,20 @@ header button{
         color: white;
     }
     
-    .card-container1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: 50px;
-        width: 100%;
-    }
-    
     .card-container1 .card div{
         background: white;
         display: flex;
-        width: 80%;
+        width: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 50px 50px 50px 50px;
         border-radius: 100%;
+    }
+
+    .card-container1 .card div img{
+        width: 70px;
+        height: 70px;
     }
     
     .card-container1 .card h3{
@@ -738,8 +760,8 @@ header button{
     
         .card-container .card div{
             background: white;
-            width: 70%;
             display: flex;
+            width: auto;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -747,6 +769,10 @@ header button{
             border-radius: 100%;
         }
     
+        .card-container .card div img{
+            width: 50px;
+            height: 50px;
+        }
     
     
         .card-container .card h3{
@@ -765,12 +791,17 @@ header button{
         .card-container1 .card div{
             background: white;
             display: flex;
-            width: 70%;
+            width: auto;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 50px 50px 50px 50px;
             border-radius: 100%;
+        }
+    
+        .card-container1 .card div img{
+            width: 50px;
+            height: 50px;
         }
     
         .card-container1 .card h3{

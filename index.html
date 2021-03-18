@@ -6,16 +6,18 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" 
                 type="image/png" 
-                href="./image/logo_size.jpg">
+                href="./images/logo_size.jpg">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     </head>
     <body>
+        <div id = "particles-js"></div>
         <header>
             <div>
-                <a href = './index.html'><button>Home</button></a>
-                <a href = './Projects.html'><button>Projects</button></a>
-                <a href = './Contact.html'><button>Contact</button></a>
+                <a href = '#'><button type="button">Home</button></a>
+                <a href = '#skills'><button type="button">Skill Sets</button></a>
+                <a href = '#projects'><button type="button">Projects</button></a>
+                <a href = '#contacts'><button type="button">Contact</button></a>
             </div>
         </header>
 
@@ -28,101 +30,145 @@
         </div>
 
         <div class = "menu">
-            <a href = './index.html'><button>Home</button></a>
-            <a href = './Projects.html'><button>Project</button></a>
-            <a href = './Contact.html'><button>Contact</button></a>
+            <a href = '#'><button>Home</button></a>
+            <a href = '#skills'><button>Skill Sets</button></a>
+            <a href = '#projects'><button>Projects</button></a>
+            <a href = '#contacts'><button>Contact</button></a>
         </div>
-
-        <section class="main">
-            <div>
+        <section class = "main-section">
+            <div class="text_div">
                 <h1>Hello,</h1>
                 <h1 id = "first">My name is <span id = "span_node"></span></h1>
                 <p id = "text"></p>
             </div>
-            <img src="./image/illustrate.jpg" class = 'image'/>
         </section>
+        <section class = "skill-section">
+            <h1 style = "color : white; margin : 0" id = "skills">Skills</h1>
+            <div class = "skill-set-container hidden">
+                <div class = "skillset">
+                    <div class = "first">
+                        <div class = "card">
+                            <img src = './images/html5.png'/>
+                            <p>HTML5</p>
+                        </div>
+                        <div class = "card">
+                            <img src = './images/css.png'/>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class = "second">
+                        <div class = "card">
+                            <img src = './images/atom.png'/>
+                            <p>REACT</p>
+                        </div>
+                        <div class = "card">
+                            <img src = './images/nodejs.png'/>
+                            <p>NODEJS</p>
+                        </div>
+                        <div class = "card">
+                            <img src = './images/database-storage.png'/>
+                            <p>POSTGRESSQL</p>
+                        </div>
+                    </div>
+                    <div class = "third">
+                        <div class = "card">
+                            <img src = './images/python.png'/>
+                            <p>PYTHON</p>
+                        </div>
+                        <div class = "card">
+                            <img src = './images/law.png'/>
+                            <p>WRITING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "skill-bar hidden">
+                    <div class="container">
+                        <div class="skills html">HTML 70%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills css">CSS 70%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills react">REACT 70%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills node">NODE 60%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills database">DATABASE 50%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills python">PYTHON 70%</div>
+                    </div>
+                    <div class="container">
+                        <div class="skills writing">WRITING 80%</div>
+                    </div>
 
-        <section class = "main0">
-            <h1>I <span>CONVERT</span> DESIGNS INTO BEAUTIFUL <span>RESPONSIVE</span> WEBSITES,<br>CREATE <span>FUNCTIONING</span> WEB APPS AND WRITE <span>ENGAGING</span> PIECE OF WRITEUPS</h1>
-            <div class = "card-container">
-                <div class = 'card hidden' >
-                    <div id = "responsive">
-                        <img src="./image/laptop3.png" alt="" srcset="" >
-                    </div>
-                    <h3>Responsive Web Design</h3>
-                </div>
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/css.png" alt="" srcset="" >
-                    </div>
-                   <h3>HTML5/CSS3 Dev</h3>
-                </div>
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/react.png" alt="" srcset="">
-                    </div>
-                    <h3>Javascript/React</h3>
-                </div>
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/nodejs.png" alt="" srcset="" >
-                    </div>
-                    <h3>NodeJs/ExpressJs</h3>
-                </div>
-            </div>
-
-            <div class="card-container1">
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/database.png" alt="" srcset="" >
-                    </div>
-                    <h3>Database/Postgres</h3>
-                </div>
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/python.png" alt="" srcset="" >
-                    </div>
-                    <h3>Python</h3>
-                </div>
-                <div class = 'card hidden'>
-                    <div>
-                        <img src="./image/pen.png" alt="" srcset="" >
-                    </div>
-                    <h3>Writing</h3>
-                </div>
-            </div>
-        </section>
-
-        <section class = "main1">
-            <p class="hidden">Skills</p>
-            <div class = "progress-container hidden">
-                <div class = "bar">
-                    <div id ="html">HTML5</div>
-                </div>
-                <div class = "bar">
-                    <div id ="css">CSS3</div>
-                </div>
-                <div class = "bar">
-                    <div id = "js">Javascript/React</div>
-                </div>
-                <div class = "bar">
-                    <div id ="node">NodeJs/ExpressJs</div>
-                </div>
-                <div class = "bar">
-                    <div id = "db">Database</div>
-                </div>
-                <div class = "bar">
-                    <div id = "python">Python</div>
-                </div>
-                <div class = "bar">
-                    <div id = "write">Writing</div>
                 </div>
             </div>
         </section>
 
-        <a href='https://www.freepik.com/vectors/design' style="color: grey;">Design vector created by freepik - www.freepik.com</a>
+        <section id = "projects" class = "project-section">
+            <h1 id = "projects">Projects</h1>
+            <div class = "project">
+                <div class = 'project-card project-slide' id = "smartbrain">
+                    <a href = "https://smartbrain-m.herokuapp.com/"><h1>SmartBrain</h1></a>
+                    <p>A simple react application<br>
+                        built with react on the frontend and nodejs on the backend.<br>
+                        The app detects faces in pictures.
+                    </p>
+                </div>
+                <div class = 'project-card project-slide' id = "chop">
+                    <a href = "https://chop-theta.vercel.app/"><h1>Chop</h1></a>
+                    <p>A simple application built with HTML, CSS and Vanilla Js.<br>
+                        It helps generate different recipes for foods.
+                    </p>
+                </div>
+                <div class = 'project-card project-slide' id = "weather">
+                    <a href = "https://shrouded-temple-33685.herokuapp.com/"><h1>Simple Forecast</h1></a>
+                    <p>A simple react application<br>
+                        It helps to get the weather condition of over 200 cities.
+                    </p>
+                </div>
+                <div class = "project-card project-slide" id = "social-media">
+                    <a href = "https://quadrizzz.github.io/Updated_Robofriends/"><h1>Social media dashboard</h1></a>
+                    <p>A simple social media dashboard design<br>
+                        Implemented with HTML and CSS.
+                    </p>
+                </div>
+                <div class = "project-card project-slide" id = "robofriend">
+                    <a href = "https://social-media-dashboard-inky.vercel.app/"><h1>Robofriends</h1></a>
+                    <p>A simple react application<br>
+                        It shows the usage of REST APIs
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class = "contact-section">
+            <h1 id = "contacts">Contact Me</h1>
+            <div class = "contacts">
+                <div class = "form">
+                    <h1>Send me a mail</h1>
+                    <form action="https://getform.io/f/9affbbfa-db21-471b-8980-5a73081eaa0e" method="POST">
+                        <input type="text" name="name" placeholder = "Name">
+                        <input type="email" name="email" placeholder = "Email">
+                        <textarea type="text" name="message" placeholder = "Message" id = "message"></textarea>
+                        <button type="submit">Send</button>   
+                    </form>
+                </div>
+                <div class = "social-media">
+                    <h1>You can contact me on other social media channels</h1>
+                    <div class = "accounts">
+                        <a href = "https://twitter.com/@Azur_xx"><img src = "./images/twitter.png"/></a>
+                        <a href = "https://www.linkedin.com/in/abdulmalik-quadri-708374175"><img src = "./images/linkedin.png"/></a>
+                        <a href="https://wa.link/lmssyt"><img src = "./images/whatsapp.png"/></a>
+                        <a href = "mailto: abdulmalikquadri505@gmail.com"><img src = "./images/email.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
-
-    <script src="./scripts/script.js"></script>
-
+    <script src = './scripts/script.js'></script>
+    <script src="./scripts/particles.js"></script>
+    <script src="./scripts/app.js"></script>
 </html>

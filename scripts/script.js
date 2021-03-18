@@ -24,18 +24,16 @@ function animate2(){
         z++
         setTimeout(animate2, 100)
     }
-    show()
+
 }
 
-function show(){
-    document.getElementsByClassName('image')[0].classList.add('show-image')
-}
-
+var projectSlide = document.querySelectorAll('.project-slide')
 animate1()
 
 var scroll = window.requestAnimationFrame || function(callback){
     window.setTimeout(callback, 1000/60)
 }
+
 
 var elementToShow = document.querySelectorAll('.hidden')
 
@@ -49,8 +47,19 @@ function loop(){
             element.classList.remove('is-visible')
         }
     })
+
+    projectSlide.forEach((element)=>{
+        if(isElementInViewport(element)){
+            element.classList.add('show-project-slide')
+        }
+        else{
+            element.classList.remove('show-project-slide')
+        }
+    })
     scroll(loop)
 }
+
+
 
 const isElementInViewport = (el)=>{
     if (typeof jQuery === "function" && el instanceof jQuery) {
